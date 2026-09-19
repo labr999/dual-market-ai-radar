@@ -25,14 +25,14 @@
     </header>
 
     <main>
-      <section class="ticker-strip" aria-label="主要指數">
-        <div class="index-lead"><span id="marketLabel">台灣加權</span><strong id="indexValue">22,510.25</strong><em id="indexChange" class="up">+1.18%</em></div>
-        <div class="ticker"><small>成交值</small><b id="turnover">4,238 億</b></div>
-        <div class="ticker"><small>上漲 / 下跌</small><b id="breadth">623 / 338</b></div>
-        <div class="ticker"><small>外資買賣超</small><b id="foreignFlow" class="up">+126.8 億</b></div>
-        <div class="ticker"><small>市場溫度</small><b id="temperature">偏多 72°</b></div>
+      <section class="ticker-strip index-board" aria-label="全球主要指數">
+        <div class="index-lead index-card"><span>台灣加權</span><strong id="idxTwii">--</strong><em id="idxTwiiChange">等待資料</em></div>
+        <div class="ticker index-card"><small>道瓊工業</small><b id="idxDji">--</b><em id="idxDjiChange">等待資料</em></div>
+        <div class="ticker index-card"><small>那斯達克</small><b id="idxIxic">--</b><em id="idxIxicChange">等待資料</em></div>
+        <div class="ticker index-card"><small>費城半導體</small><b id="idxSox">--</b><em id="idxSoxChange">等待資料</em></div>
       </section>
 
+      <div hidden aria-hidden="true"><span id="marketLabel"></span><span id="indexValue"></span><span id="indexChange"></span><span id="turnover"></span><span id="breadth"></span><span id="foreignFlow"></span><span id="temperature"></span></div>
       <form class="quote-search" id="quoteSearch"><label for="symbolInput">股票代號</label><input id="symbolInput" value="2330" autocomplete="off" spellcheck="false" aria-label="輸入股票代號"><button type="submit">查詢</button><span id="feedStatus" class="feed-pill loading">正在取得報價…</span><span id="lastUpdated">尚未更新</span><a id="googleLink" target="_blank" rel="noopener">Google Finance ↗</a></form>
       <section class="headline-row">
         <div><span class="eyebrow">AI DECISION SYSTEM</span><h1><span id="symbol">2330</span> <span id="company">台積電</span></h1><p id="summary">趨勢與籌碼共振，短線拉回仍具承接力道。</p></div>
@@ -83,7 +83,9 @@
         </article>
 
         <article class="panel span-6">
-          <header><div><span class="panel-num">07</span><h2>AI 候選清單</h2></div><button class="text-btn">查看全部 →</button></header>
+          <header><div><span class="panel-num">07</span><h2>六組自選清單</h2></div><span class="muted">儲存於此裝置</span></header>
+          <div class="watch-tabs" id="watchTabs" role="tablist" aria-label="自選清單分組"></div>
+          <form class="watch-add" id="watchAdd"><input id="watchSymbol" placeholder="輸入代號，如 AAPL" aria-label="新增股票代號"><button type="submit">＋ 加入</button></form>
           <div class="watchlist" id="watchlist"></div>
         </article>
 
