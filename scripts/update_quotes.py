@@ -8,6 +8,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "quotes.json"
 TW = ["2330", "2454", "2317", "2382", "2308"]
 US = ["NVDA", "MSFT", "AVGO", "GOOGL", "META", "AAPL", "TSLA", "AMZN"]
+INDICES = ["^TWII", "^DJI", "^IXIC", "^SOX"]
 HEADERS = {"User-Agent": "Mozilla/5.0 dual-market-ai-radar/1.0", "Accept": "application/json"}
 
 def get_json(url):
@@ -49,7 +50,7 @@ def main():
     except Exception as exc:
         print(f"TWSE unavailable: {exc}")
     quotes, errors = {}, {}
-    for symbol in [f"{code}.TW" for code in TW] + US:
+    for symbol in [f"{code}.TW" for code in TW] + US + INDICES:
         try:
             item = yahoo(symbol)
             if symbol.endswith(".TW"):
