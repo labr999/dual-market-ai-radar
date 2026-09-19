@@ -29,3 +29,24 @@ function applyCachedQuote(q,market,raw,generatedAt){const d=markets[market],live
 const directQuoteFallback=loadQuote;
 loadQuote=async function(raw=$('symbolInput').value){const market=current,clean=raw.trim().toUpperCase();if(!/^[A-Z0-9.^-]{1,12}$/.test(clean)){setFeed('代號格式錯誤','error');return}$('symbolInput').value=clean;setFeed('讀取市場報價…','loading');$('quoteSearch').setAttribute('aria-busy','true');try{const cache=await getQuoteCache(),key=market==='tw'?`${clean}.TW`:clean,q=cache.quotes?.[key];if(!q)throw new Error('此代號尚未加入定時報價清單');applyCachedQuote(q,market,clean,cache.generated_at);setFeed(q.twse_verified?'證交所核對 · Yahoo 延遲報價':'Yahoo Finance 延遲報價','delayed');$('toast').textContent='市場報價已更新';$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),1600)}catch(err){console.warn('Cache unavailable, trying provider directly',err);await directQuoteFallback(clean)}finally{$('quoteSearch').removeAttribute('aria-busy')}};
 loadQuote('2330');
+
+const defaultWatchGroups=[
+ {name:'台股核心',symbols:['2330.TW','2454.TW','2317.TW']},
+ {name:'台股 AI',symbols:['2382.TW','2308.TW','2454.TW']},
+ {name:'美股科技',symbols:['NVDA','MSFT','GOOGL','META']},
+ {name:'美股半導體',symbols:['NVDA','AVGO']},
+ {name:'美股成長',symbols:['AAPL','TSLA','AMZN']},
+ {name:'我的觀察',symbols:['2330.TW','NVDA']}
+];
+let watchGroups=(()=>{try{const saved=JSON.parse(localStorage.getItem('dm-watch-groups'));return Array.isArray(saved)&&saved.length===6?saved:structuredClone(defaultWatchGroups)}catch{return structuredClone(defaultWatchGroups)}})();
+let activeWatch=0,latestQuoteCache=null;
+function saveWatchGroups(){localStorage.setItem('dm-watch-groups',JSON.stringify(watchGroups))}
+function changeText(id,value,change){$(id).textContent=Number(value).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});const node=$(`${id}Change`),pct=Number(change);node.textContent=`${pct>=0?'+':''}${pct.toFixed(2)}%`;node.className=pct>=0?'up':'down'}
+function renderIndices(cache){const map=[['^TWII','idxTwii'],['^DJI','idxDji'],['^IXIC','idxIxic'],['^SOX','idxSox']];for(const [symbol,id] of map){const q=cache.quotes?.[symbol];if(q){const pct=(Number(q.price)-Number(q.previous_close))/Number(q.previous_close)*100;changeText(id,q.price,pct)}}}
+function renderWatchTabs(){$('watchTabs').innerHTML=watchGroups.map((g,i)=>`<button type="button" class="watch-tab ${i===activeWatch?'active':''}" data-watch="${i}" role="tab" aria-selected="${i===activeWatch}">${g.name}</button>`).join('');document.querySelectorAll('[data-watch]').forEach(b=>b.addEventListener('click',()=>{activeWatch=Number(b.dataset.watch);renderWatchTabs();renderWatchlist()}))}
+function renderWatchlist(){if(!$('watchlist'))return;const group=watchGroups[activeWatch];$('watchlist').innerHTML=group.symbols.map(symbol=>{const q=latestQuoteCache?.quotes?.[symbol],price=q?Number(q.price).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}):'等待報價',pct=q&&q.previous_close?(Number(q.price)-Number(q.previous_close))/Number(q.previous_close)*100:null,cls=pct===null?'':pct>=0?'up':'down';return `<div class="stock-row"><div class="stock-name"><b>${symbol.replace('.TW','')}</b><small>${q?.name||'尚未加入資料來源'}</small></div><span>${price}</span><span class="${cls}">${pct===null?'--':`${pct>=0?'+':''}${pct.toFixed(2)}%`}</span><button class="remove-stock" data-remove="${symbol}" aria-label="移除 ${symbol}">×</button></div>`}).join('')||'<div class="muted" style="padding:18px 4px">此分組尚未加入股票</div>';document.querySelectorAll('[data-remove]').forEach(b=>b.addEventListener('click',()=>{group.symbols=group.symbols.filter(s=>s!==b.dataset.remove);saveWatchGroups();renderWatchlist()}))}
+$('watchAdd').addEventListener('submit',e=>{e.preventDefault();let symbol=$('watchSymbol').value.trim().toUpperCase();if(!symbol)return;if(/^\d{4,6}$/.test(symbol))symbol+='.TW';const group=watchGroups[activeWatch];if(!group.symbols.includes(symbol))group.symbols.push(symbol);saveWatchGroups();$('watchSymbol').value='';renderWatchlist()});
+renderWatchTabs();renderWatchlist();
+const cachedLoadQuote=loadQuote;
+loadQuote=async function(raw=$('symbolInput').value){await cachedLoadQuote(raw);try{const cache=await getQuoteCache();latestQuoteCache=cache;renderIndices(cache);renderWatchTabs();renderWatchlist()}catch(e){console.warn('Index/watch cache unavailable',e)}};
+loadQuote('2330');
