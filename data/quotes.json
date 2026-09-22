@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T21:58:32.436051+00:00",
+  "generated_at": "2026-09-22T23:58:02.684695+00:00",
   "quotes": {
     "2330.TW": {
       "symbol": "2330.TW",
@@ -814,7 +814,7 @@
       "name": "Tesla, Inc.",
       "price": 378.9,
       "previous_close": 356.58,
-      "high": 380.4175,
+      "high": 380.418,
       "low": 372.88,
       "market_time": "2026-09-22T20:00:00+00:00",
       "history": [
