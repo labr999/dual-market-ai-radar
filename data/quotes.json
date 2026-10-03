@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T20:54:25.259330+00:00",
+  "generated_at": "2026-10-03T00:01:45.851200+00:00",
   "quotes": {
     "2330.TW": {
       "symbol": "2330.TW",
@@ -73,7 +73,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "2510.00"
+      "twse_close": "2500.00"
     },
     "2454.TW": {
       "symbol": "2454.TW",
@@ -147,7 +147,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "4980.00"
+      "twse_close": "4950.00"
     },
     "2317.TW": {
       "symbol": "2317.TW",
@@ -221,7 +221,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "254.00"
+      "twse_close": "251.00"
     },
     "2382.TW": {
       "symbol": "2382.TW",
@@ -295,7 +295,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "334.00"
+      "twse_close": "332.00"
     },
     "2308.TW": {
       "symbol": "2308.TW",
@@ -369,7 +369,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "1905.00"
+      "twse_close": "1885.00"
     },
     "NVDA": {
       "symbol": "NVDA",
@@ -1035,7 +1035,7 @@
       "previous_close": 51828.62,
       "high": 51382.88,
       "low": 50950.61,
-      "market_time": "2026-10-02T20:20:01+00:00",
+      "market_time": "2026-10-02T21:00:17+00:00",
       "history": [
         51051.5,
         51009.62890625,
@@ -1108,7 +1108,7 @@
       "previous_close": 27068.72,
       "high": 27353.68,
       "low": 27112.24,
-      "market_time": "2026-10-02T20:54:24+00:00",
+      "market_time": "2026-10-02T21:15:59+00:00",
       "history": [
         27191.689453125,
         27176.16796875,
@@ -1181,7 +1181,7 @@
       "previous_close": 12668.93,
       "high": 13269.334,
       "low": 13082.006,
-      "market_time": "2026-10-02T20:54:24+00:00",
+      "market_time": "2026-10-02T21:15:59+00:00",
       "history": [
         13199.318359375,
         13185.9287109375,
