@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T20:44:16.975732+00:00",
+  "generated_at": "2026-10-13T23:54:39.890693+00:00",
   "quotes": {
     "2330.TW": {
       "symbol": "2330.TW",
@@ -73,7 +73,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "2540.00"
+      "twse_close": "2490.00"
     },
     "2454.TW": {
       "symbol": "2454.TW",
@@ -147,7 +147,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "4625.00"
+      "twse_close": "4525.00"
     },
     "2317.TW": {
       "symbol": "2317.TW",
@@ -221,7 +221,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "244.50"
+      "twse_close": "240.00"
     },
     "2382.TW": {
       "symbol": "2382.TW",
@@ -295,7 +295,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "322.00"
+      "twse_close": "323.00"
     },
     "2308.TW": {
       "symbol": "2308.TW",
@@ -369,7 +369,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "1900.00"
+      "twse_close": "1775.00"
     },
     "NVDA": {
       "symbol": "NVDA",
@@ -1031,12 +1031,13 @@
     "^DJI": {
       "symbol": "^DJI",
       "name": "Dow Jones Industrial Average",
-      "price": 51670.1,
+      "price": 51850.6,
       "previous_close": 51521.28,
       "high": 52317.32,
       "low": 51587.67,
-      "market_time": "2026-10-13T20:41:55+00:00",
+      "market_time": "2026-10-12T20:00:00+00:00",
       "history": [
+        51797.9609375,
         51787.30859375,
         51811.1484375,
         51780.609375,
@@ -1095,8 +1096,7 @@
         51736.5390625,
         51713.3203125,
         51692.328125,
-        51672.1484375,
-        51670.1015625
+        51672.1484375
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": false
@@ -1108,7 +1108,7 @@
       "previous_close": 27599.79,
       "high": 27277.883,
       "low": 27116.08,
-      "market_time": "2026-10-13T20:44:13+00:00",
+      "market_time": "2026-10-13T21:15:59+00:00",
       "history": [
         27177.712890625,
         27199.884765625,
@@ -1181,7 +1181,7 @@
       "previous_close": 13217.82,
       "high": 12217.209,
       "low": 11861.278,
-      "market_time": "2026-10-13T20:44:12+00:00",
+      "market_time": "2026-10-13T21:15:59+00:00",
       "history": [
         11995.7197265625,
         12003.75390625,
