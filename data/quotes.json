@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T20:36:56.027924+00:00",
+  "generated_at": "2026-10-16T22:59:07.622769+00:00",
   "quotes": {
     "2330.TW": {
       "symbol": "2330.TW",
@@ -73,7 +73,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "2440.00"
+      "twse_close": "2420.00"
     },
     "2454.TW": {
       "symbol": "2454.TW",
@@ -147,7 +147,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "4165.00"
+      "twse_close": "4250.00"
     },
     "2317.TW": {
       "symbol": "2317.TW",
@@ -221,7 +221,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "239.50"
+      "twse_close": "244.00"
     },
     "2382.TW": {
       "symbol": "2382.TW",
@@ -295,7 +295,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "316.50"
+      "twse_close": "322.00"
     },
     "2308.TW": {
       "symbol": "2308.TW",
@@ -369,7 +369,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "1630.00"
+      "twse_close": "1635.00"
     },
     "NVDA": {
       "symbol": "NVDA",
@@ -814,7 +814,7 @@
       "name": "Tesla, Inc.",
       "price": 354.72,
       "previous_close": 382.7,
-      "high": 370.58,
+      "high": 370.5,
       "low": 349.33,
       "market_time": "2026-10-16T20:00:01+00:00",
       "history": [
@@ -1035,7 +1035,7 @@
       "previous_close": 51654.95,
       "high": 52582.32,
       "low": 51847.94,
-      "market_time": "2026-10-16T20:20:00+00:00",
+      "market_time": "2026-10-16T20:42:09+00:00",
       "history": [
         52362.3203125,
         52387.3515625,
@@ -1108,7 +1108,7 @@
       "previous_close": 27366.17,
       "high": 26674.66,
       "low": 26023.102,
-      "market_time": "2026-10-16T20:36:51+00:00",
+      "market_time": "2026-10-16T21:15:59+00:00",
       "history": [
         26422.205078125,
         26434.1328125,
@@ -1181,7 +1181,7 @@
       "previous_close": 12572.42,
       "high": 11480.763,
       "low": 11128.077,
-      "market_time": "2026-10-16T20:36:53+00:00",
+      "market_time": "2026-10-16T21:15:59+00:00",
       "history": [
         11318.275390625,
         11338.1787109375,
