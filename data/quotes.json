@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-19T20:09:03.706071+00:00",
+  "generated_at": "2026-10-19T23:34:16.550623+00:00",
   "quotes": {
     "2330.TW": {
       "symbol": "2330.TW",
-      "name": "台積電",
+      "name": "Taiwan Semiconductor Manufacturing Company Limited",
       "price": 2420.0,
       "previous_close": 2490.0,
       "high": 2420.0,
@@ -72,12 +72,11 @@
         2420.0
       ],
       "source": "Yahoo Finance delayed",
-      "twse_verified": true,
-      "twse_close": "2420.00"
+      "twse_verified": false
     },
     "2454.TW": {
       "symbol": "2454.TW",
-      "name": "聯發科",
+      "name": "MediaTek Inc.",
       "price": 4205.0,
       "previous_close": 4525.0,
       "high": 4250.0,
@@ -146,12 +145,11 @@
         4205.0
       ],
       "source": "Yahoo Finance delayed",
-      "twse_verified": true,
-      "twse_close": "4250.00"
+      "twse_verified": false
     },
     "2317.TW": {
       "symbol": "2317.TW",
-      "name": "鴻海",
+      "name": "Hon Hai Precision Industry Co., Ltd.",
       "price": 239.5,
       "previous_close": 240.0,
       "high": 242.5,
@@ -220,12 +218,11 @@
         239.5
       ],
       "source": "Yahoo Finance delayed",
-      "twse_verified": true,
-      "twse_close": "244.00"
+      "twse_verified": false
     },
     "2382.TW": {
       "symbol": "2382.TW",
-      "name": "廣達",
+      "name": "Quanta Computer Inc.",
       "price": 314.5,
       "previous_close": 323.0,
       "high": 318.0,
@@ -294,12 +291,11 @@
         314.5
       ],
       "source": "Yahoo Finance delayed",
-      "twse_verified": true,
-      "twse_close": "322.00"
+      "twse_verified": false
     },
     "2308.TW": {
       "symbol": "2308.TW",
-      "name": "台達電",
+      "name": "Delta Electronics, Inc.",
       "price": 1640.0,
       "previous_close": 1775.0,
       "high": 1655.0,
@@ -368,8 +364,7 @@
         1640.0
       ],
       "source": "Yahoo Finance delayed",
-      "twse_verified": true,
-      "twse_close": "1635.00"
+      "twse_verified": false
     },
     "NVDA": {
       "symbol": "NVDA",
@@ -584,7 +579,7 @@
         335.9200134277344,
         335.9200134277344,
         334.8800048828125,
-        334.6000061035156,
+        334.6400146484375,
         334.5899963378906
       ],
       "source": "Yahoo Finance delayed",
@@ -607,7 +602,7 @@
         345.8299865722656,
         345.9800109863281,
         345.6600036621094,
-        346.1400146484375,
+        346.1199951171875,
         346.2349853515625,
         345.81500244140625,
         345.3797912597656,
@@ -857,7 +852,7 @@
         368.05499267578125,
         367.6596984863281,
         367.9049987792969,
-        367.06500244140625,
+        367.04998779296875,
         366.8599853515625,
         366.3599853515625,
         366.8699951171875,
@@ -1035,7 +1030,7 @@
       "previous_close": 51850.55,
       "high": 52134.58,
       "low": 51863.8,
-      "market_time": "2026-10-19T20:09:02+00:00",
+      "market_time": "2026-10-19T20:44:25+00:00",
       "history": [
         52007.73828125,
         52028.46875,
@@ -1108,7 +1103,7 @@
       "previous_close": 27245.9,
       "high": 26613.146,
       "low": 26344.666,
-      "market_time": "2026-10-19T20:09:02+00:00",
+      "market_time": "2026-10-19T21:15:59+00:00",
       "history": [
         26536.998046875,
         26530.275390625,
@@ -1181,7 +1176,7 @@
       "previous_close": 12236.79,
       "high": 11550.923,
       "low": 11293.454,
-      "market_time": "2026-10-19T20:09:02+00:00",
+      "market_time": "2026-10-19T21:15:59+00:00",
       "history": [
         11478.607421875,
         11470.587890625,
