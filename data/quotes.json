@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T07:20:11.752236+00:00",
+  "generated_at": "2026-10-20T12:47:22.032650+00:00",
   "quotes": {
     "2330.TW": {
       "symbol": "2330.TW",
@@ -1031,11 +1031,11 @@
     "^DJI": {
       "symbol": "^DJI",
       "name": "Dow Jones Industrial Average",
-      "price": 51966.0,
+      "price": 51966.03,
       "previous_close": 51850.55,
       "high": 52134.58,
       "low": 51863.8,
-      "market_time": "2026-10-19T20:00:00+00:00",
+      "market_time": "2026-10-19T20:44:25+00:00",
       "history": [
         52007.73828125,
         52028.46875,
@@ -1096,7 +1096,7 @@
         52011.51953125,
         51999.3203125,
         51975.87109375,
-        51966.0
+        51966.03125
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": false
