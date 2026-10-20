@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T20:48:29.395619+00:00",
+  "generated_at": "2026-10-20T23:27:05.082960+00:00",
   "quotes": {
     "2330.TW": {
       "symbol": "2330.TW",
@@ -73,7 +73,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "2420.00"
+      "twse_close": "2405.00"
     },
     "2454.TW": {
       "symbol": "2454.TW",
@@ -147,7 +147,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "4205.00"
+      "twse_close": "4150.00"
     },
     "2317.TW": {
       "symbol": "2317.TW",
@@ -221,7 +221,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "239.50"
+      "twse_close": "241.50"
     },
     "2382.TW": {
       "symbol": "2382.TW",
@@ -295,7 +295,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "314.50"
+      "twse_close": "320.50"
     },
     "2308.TW": {
       "symbol": "2308.TW",
@@ -369,7 +369,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "1640.00"
+      "twse_close": "1605.00"
     },
     "NVDA": {
       "symbol": "NVDA",
@@ -1108,7 +1108,7 @@
       "previous_close": 27204.38,
       "high": 26601.715,
       "low": 26179.736,
-      "market_time": "2026-10-20T20:48:27+00:00",
+      "market_time": "2026-10-20T21:15:59+00:00",
       "history": [
         26558.0859375,
         26453.267578125,
@@ -1181,7 +1181,7 @@
       "previous_close": 12208.79,
       "high": 11460.129,
       "low": 11043.236,
-      "market_time": "2026-10-20T20:48:26+00:00",
+      "market_time": "2026-10-20T21:15:59+00:00",
       "history": [
         11422.0830078125,
         11343.0283203125,
