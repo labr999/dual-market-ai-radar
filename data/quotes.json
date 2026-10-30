@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T20:31:22.101019+00:00",
+  "generated_at": "2026-10-30T00:08:26.177395+00:00",
   "quotes": {
     "2330.TW": {
       "symbol": "2330.TW",
@@ -73,7 +73,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "2425.00"
+      "twse_close": "2415.00"
     },
     "2454.TW": {
       "symbol": "2454.TW",
@@ -147,7 +147,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "4235.00"
+      "twse_close": "4045.00"
     },
     "2317.TW": {
       "symbol": "2317.TW",
@@ -221,7 +221,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "251.50"
+      "twse_close": "248.00"
     },
     "2382.TW": {
       "symbol": "2382.TW",
@@ -295,7 +295,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "330.00"
+      "twse_close": "318.00"
     },
     "2308.TW": {
       "symbol": "2308.TW",
@@ -369,7 +369,7 @@
       ],
       "source": "Yahoo Finance delayed",
       "twse_verified": true,
-      "twse_close": "1550.00"
+      "twse_close": "1480.00"
     },
     "NVDA": {
       "symbol": "NVDA",
@@ -1035,7 +1035,7 @@
       "previous_close": 52867.98,
       "high": 52405.88,
       "low": 52086.13,
-      "market_time": "2026-10-29T20:20:01+00:00",
+      "market_time": "2026-10-29T20:33:51+00:00",
       "history": [
         52348.8515625,
         52367.01953125,
@@ -1108,7 +1108,7 @@
       "previous_close": 26008.86,
       "high": 26286.46,
       "low": 26053.162,
-      "market_time": "2026-10-29T20:31:21+00:00",
+      "market_time": "2026-10-29T21:15:59+00:00",
       "history": [
         26222.091796875,
         26235.5859375,
@@ -1181,7 +1181,7 @@
       "previous_close": 10731.98,
       "high": 11620.79,
       "low": 11363.806,
-      "market_time": "2026-10-29T20:31:18+00:00",
+      "market_time": "2026-10-29T21:15:59+00:00",
       "history": [
         11546.2724609375,
         11565.126953125,
